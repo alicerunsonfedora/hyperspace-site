@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    {% include navbar.html %}
+    <body>
+        <div class = "container page-content">
+            <div class = "row">
+                <div class = "col">
+                    <h1>Version {{ page.version }}</h1>
+                    <h3>Released on {{ page.date | date: "%B %d, %Y" }}</h3>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-sm-12 col-md-8">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </body>
+    {% include footer.html %}
+    {% include scripts.html %}
+</html>
