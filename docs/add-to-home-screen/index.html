@@ -1,0 +1,692 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.3f231acaa19954c3c951.css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}body,body div#___gatsby,body div#___gatsby div[role=group],html{height:100%}</style><meta name="generator" content="Gatsby 2.3.23"/><title data-react-helmet="true">Add Hyperspace to your mobile device - Hyperspace Docs | Hyperspace</title><meta data-react-helmet="true" name="description" content="The fluffiest client for the fediverse"/><meta data-react-helmet="true" property="og:title" content="Add Hyperspace to your mobile device - Hyperspace Docs"/><meta data-react-helmet="true" property="og:description" content="The fluffiest client for the fediverse"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Hyperspace developers"/><meta data-react-helmet="true" name="twitter:title" content="Add Hyperspace to your mobile device - Hyperspace Docs"/><meta data-react-helmet="true" name="twitter:description" content="The fluffiest client for the fediverse"/><style type="text/css" id="server-side-jss">.jss16 {
+  background-color: #fff;
+}
+.jss17 {
+  border-radius: 4px;
+}
+.jss18 {
+  box-shadow: none;
+}
+.jss19 {
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+}
+.jss20 {
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+}
+.jss21 {
+  box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 3px 3px -2px rgba(0,0,0,0.12);
+}
+.jss22 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.jss23 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.jss24 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.jss25 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.jss26 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.jss27 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.jss28 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.jss29 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.jss30 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.jss31 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.jss32 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.jss33 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.jss34 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.jss35 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.jss36 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.jss37 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.jss38 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.jss39 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.jss40 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.jss41 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.jss42 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.jss7 {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.jss8 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: fixed;
+}
+.jss9 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: absolute;
+}
+.jss10 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: sticky;
+}
+.jss11 {
+  position: static;
+}
+.jss12 {
+  position: relative;
+}
+.jss13 {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5f5f5;
+}
+.jss14 {
+  color: #fff;
+  background-color: #673ab7;
+}
+.jss15 {
+  color: #fff;
+  background-color: #ff1744;
+}
+.jss61 {
+  color: inherit;
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+  outline: none;
+  position: relative;
+  user-select: none;
+  align-items: center;
+  border-radius: 0;
+  vertical-align: middle;
+  justify-content: center;
+  -moz-appearance: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.jss61::-moz-focus-inner {
+  border-style: none;
+}
+.jss61.jss62 {
+  cursor: default;
+  pointer-events: none;
+}
+.jss73 {
+  margin: 0;
+  display: block;
+}
+.jss74 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.14286em;
+  margin-left: -.04em;
+  letter-spacing: -.04em;
+}
+.jss75 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.30357em;
+  margin-left: -.02em;
+  letter-spacing: -.02em;
+}
+.jss76 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.13333em;
+  margin-left: -.02em;
+}
+.jss77 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.20588em;
+}
+.jss78 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.35417em;
+}
+.jss79 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.16667em;
+}
+.jss80 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.5em;
+}
+.jss81 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+}
+.jss82 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+}
+.jss83 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.75rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.66;
+}
+.jss84 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+.jss85 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 6rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 300;
+  line-height: 1;
+}
+.jss86 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 3.75rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 300;
+  line-height: 1;
+}
+.jss87 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 3rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.04;
+}
+.jss88 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 2.125rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.17;
+}
+.jss89 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.33;
+}
+.jss90 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.25rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.6;
+}
+.jss91 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.75;
+}
+.jss92 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.57;
+}
+.jss93 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.75rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 2.66;
+  text-transform: uppercase;
+}
+.jss94 {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+.jss95 {
+  text-align: left;
+}
+.jss96 {
+  text-align: center;
+}
+.jss97 {
+  text-align: right;
+}
+.jss98 {
+  text-align: justify;
+}
+.jss99 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.jss100 {
+  margin-bottom: 0.35em;
+}
+.jss101 {
+  margin-bottom: 16px;
+}
+.jss102 {
+  color: inherit;
+}
+.jss103 {
+  color: #673ab7;
+}
+.jss104 {
+  color: #ff1744;
+}
+.jss105 {
+  color: rgba(0, 0, 0, 0.87);
+}
+.jss106 {
+  color: rgba(0, 0, 0, 0.54);
+}
+.jss107 {
+  color: #f44336;
+}
+.jss108 {
+  display: inline;
+}
+.jss55 {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.jss55:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.jss55.jss59 {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .jss55:hover {
+    background-color: transparent;
+  }
+}
+.jss55:hover.jss59 {
+  background-color: transparent;
+}
+.jss56 {
+  color: inherit;
+}
+.jss57 {
+  color: #673ab7;
+}
+.jss57:hover {
+  background-color: rgba(103, 58, 183, 0.08);
+}
+@media (hover: none) {
+  .jss57:hover {
+    background-color: transparent;
+  }
+}
+.jss58 {
+  color: #ff1744;
+}
+.jss58:hover {
+  background-color: rgba(255, 23, 68, 0.08);
+}
+@media (hover: none) {
+  .jss58:hover {
+    background-color: transparent;
+  }
+}
+.jss60 {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.jss64 {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+.jss65 {
+  color: #673ab7;
+}
+.jss66 {
+  color: #ff1744;
+}
+.jss67 {
+  color: rgba(0, 0, 0, 0.54);
+}
+.jss68 {
+  color: #f44336;
+}
+.jss69 {
+  color: rgba(0, 0, 0, 0.26);
+}
+.jss70 {
+  font-size: inherit;
+}
+.jss71 {
+  font-size: 20px;
+}
+.jss72 {
+  font-size: 35px;
+}
+.jss43 {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.jss44 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .jss44 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.jss45 {
+  min-height: 56px;
+}
+@media (min-width:0px) and (orientation: landscape) {
+  .jss45 {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .jss45 {
+    min-height: 64px;
+  }
+}
+.jss46 {
+  min-height: 48px;
+}
+.jss47 {
+  z-index: 1500;
+  opacity: 0.9;
+  pointer-events: none;
+}
+.jss48 {
+  pointer-events: auto;
+}
+.jss49 {
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.625rem;
+  max-width: 300px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.4em;
+  border-radius: 4px;
+  background-color: #616161;
+}
+.jss50 {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  line-height: 1.14286em;
+}
+.jss51 {
+  margin: 0 24px ;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .jss51 {
+    margin: 0 14px;
+  }
+}
+.jss52 {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .jss52 {
+    margin: 0 14px;
+  }
+}
+.jss53 {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .jss53 {
+    margin: 14px 0;
+  }
+}
+.jss54 {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .jss54 {
+    margin: 14px 0;
+  }
+}
+.jss1 {
+  height: 100%;
+}
+.jss2 {
+  color: white;
+  padding-top: 100px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 100px;
+  background-color: #673ab7;
+}
+@media (min-width:600px) {
+  .jss2 {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+.jss3 {
+  font-size: 1.25rem;
+}
+.jss4 {
+  margin-left: -12px;
+  margin-right: 20px;
+}
+.jss5 {
+  font-weight: 500;
+}
+.jss6 {
+  font-size: 1rem;
+  padding-top: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 48px;
+  background-color: #fafafa;
+}
+@media (min-width:600px) {
+  .jss6 {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+.jss6 a {
+  color: #ff1744;
+  text-decoration: none;
+}
+.jss6 hr {
+  margin-top: 32px;
+  border-color: rgba(0, 0, 0, 0.12);
+  margin-bottom: 24px;
+}
+.jss6 img {
+  width: 500px;
+  max-width: 100%;
+  box-shadow: 0px 0px 4px #333;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.jss6 blockquote {
+  font-size: 1.10rem;
+  font-style: italic;
+  margin-left: 0;
+  padding-top: 4px;
+  border-color: #757575;
+  border-style: solid;
+  padding-left: 24px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  border-top-width: 0;
+  background-color: #fff;
+  border-left-width: 4px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+.jss6 code {
+  font-size: 1.2rem;
+}
+.jss6 table {
+  width: 100%;
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.jss6 table thead tr th {
+  text-align: left;
+  padding-top: 12px;
+  padding-left: 12px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  padding-bottom: 12px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
+}
+.jss6 table tbody tr td {
+  padding-top: 8px;
+  padding-left: 12px;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-style: solid;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
+}
+.jss6 table tbody tr:last-child td {
+  padding-top: 8px;
+  padding-left: 12px;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-style: solid;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+@media (min-width:960px) {
+  .jss6 img {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}</style><link rel="shortcut icon" href="/icons-31eb5d12bff9087dce60915f4d752ea4/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/icons-31eb5d12bff9087dce60915f4d752ea4/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons-31eb5d12bff9087dce60915f4d752ea4/favicon-32x32.png"/><link rel="manifest" href="/icons-31eb5d12bff9087dce60915f4d752ea4/manifest.json"/><meta name="mobile-web-app-capable" content="yes"/><meta name="theme-color" content="#fff"/><meta name="application-name" content="hyperspace-v1-site"/><link rel="apple-touch-icon" sizes="57x57" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-152x152.png"/><link rel="apple-touch-icon" sizes="167x167" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-167x167.png"/><link rel="apple-touch-icon" sizes="180x180" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-180x180.png"/><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-1024x1024.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="apple-mobile-web-app-title" content="hyperspace-v1-site"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-320x460.png"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-640x920.png"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-640x1096.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-750x1294.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-1182x2208.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-1242x2148.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-748x1024.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-768x1004.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-1496x2048.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-1536x2008.png"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><style type="text/css" id="server-side-jss">html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}</style><link as="script" rel="preload" href="/component---src-templates-docpage-js-cefbc4a7a2ffb7211a4c.js"/><link as="script" rel="preload" href="/0-9a66e0b7caca73998281.js"/><link as="script" rel="preload" href="/app-ffd91931914ecf8355b5.js"/><link as="script" rel="preload" href="/styles-a63c3f2c8f2ca81ca12b.js"/><link as="script" rel="preload" href="/webpack-runtime-6a701a59a66e53c043af.js"/><link as="fetch" rel="preload" href="/static/d/261/path---docs-add-to-home-screen-392-0f2-5B51ezNuxLvZTcOP0Lb8eohNs.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="jss1"><header class="jss16 jss22 jss7 jss11 jss13"><div class="jss43 jss45 jss44"><a class="jss61 jss55 jss56 jss4" tabindex="0" role="button" title="Back to docs" href="/docs/"><span class="jss60"><svg class="jss64" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></svg></span></a><h6 class="jss73 jss90 jss102">Hyperspace Docs</h6></div></header><div class="jss2"><h1 class="jss73 jss86 jss102 jss5">Add Hyperspace to your mobile device</h1><br/><p class="jss73 jss81 jss102 jss3">Learn how to add Hyperspace to your iOS or Android device as a progressive web app.</p></div><div class="jss73 jss81 jss101 jss6"><div><p>Hyperspace is available to all kinds of devices through the web and official desktop apps. While we aren't able to deliver mobile apps ready for the App Store or Play Store, Hyperspace users can still enjoy Hyperspace on their mobile device by adding it as a progressive web app.</p>
+<h1>What is a progressive web app?</h1>
+<p>A progressive web app (PWA) uses the power and extensibility of the web to provide an experience like an app without needing to download it first from the App Store or Play Store. PWA are meant to be fast, reliable, and enaging, and we hope Hyperspace fits these needs.</p>
+<h1>Install Hyperspace as a PWA</h1>
+<h2>iOS</h2>
+<p>On your iPhone or iPad, open the Hyperspace instance you want to add as a PWA in Safari.</p>
+<p><img src="../../../images/docs/add-to-home-screen/ios-1.png" alt="image"></p>
+<p>Tap the Share icon and select <strong>Add to Home Screen</strong>.</p>
+<p><img src="../../../images/docs/add-to-home-screen/ios-2.png" alt="image"></p>
+<p>If you want to change the name of the app, do so here. Otherwise, tap <strong>Done</strong>.</p>
+<p><img src="../../../images/docs/add-to-home-screen/ios-3.png" alt="image"></p>
+<p>Hyperspace should now appear on your home screen. Tap the icon to use Hyperspace.</p>
+<h2>Android</h2>
+<p>Instructions for Android may vary depending on the browser installed on your phone. Adding the app to your home screen should be avialable in the setting's menu as 'Add shortcut' or 'Add to home screen'. Though we cannot cover for all browsers, here is how you can manually do it in Chrome.</p>
+<ol>
+<li>Open the Hyperspace site in Chrome.</li>
+<li>Tap the Settings icon (three dots) and select 'Add to Home screen'.</li>
+<li>Tap 'Add' on the dialog.</li>
+</ol>
+<p>Hyperspace should now appear on your home screen. Tap the icon to use Hyperspace.</p>
+<blockquote>
+<p>Note: Depending on your browser or Hyperspace's configuration, you might be asked automatically to add the icon to your home screen.</p>
+</blockquote></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-docpage-js","jsonName":"docs-add-to-home-screen-392","path":"/docs/add-to-home-screen"};window.dataPath="261/path---docs-add-to-home-screen-392-0f2-5B51ezNuxLvZTcOP0Lb8eohNs";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ffd91931914ecf8355b5.js"],"component---src-templates-docpage-js":["/component---src-templates-docpage-js-cefbc4a7a2ffb7211a4c.js"],"component---src-pages-404-js":["/component---src-pages-404-js-59af4152d3e0c768f132.js"],"component---src-pages-app-js":["/component---src-pages-app-js-bbae30abf0bcdbe00be8.js"],"component---src-pages-docs-js":["/component---src-pages-docs-js-20ae32b34964a2462566.js"],"component---src-pages-downloads-js":["/component---src-pages-downloads-js-1a3349536999749bc696.js"],"component---src-pages-index-js":["/component---src-pages-index-js-3c19a509860f63b63e8d.js"],"pages-manifest":["/pages-manifest-68a1fb7042b0867f64b3.js"]};/*]]>*/</script><script src="/webpack-runtime-6a701a59a66e53c043af.js" async=""></script><script src="/styles-a63c3f2c8f2ca81ca12b.js" async=""></script><script src="/app-ffd91931914ecf8355b5.js" async=""></script><script src="/0-9a66e0b7caca73998281.js" async=""></script><script src="/component---src-templates-docpage-js-cefbc4a7a2ffb7211a4c.js" async=""></script></body></html>

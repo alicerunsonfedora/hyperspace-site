@@ -1,0 +1,855 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.3f231acaa19954c3c951.css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}body,body div#___gatsby,body div#___gatsby div[role=group],html{height:100%}</style><meta name="generator" content="Gatsby 2.3.23"/><title data-react-helmet="true">What&#x27;s new in Hyperspace - Hyperspace Docs | Hyperspace</title><meta data-react-helmet="true" name="description" content="The fluffiest client for the fediverse"/><meta data-react-helmet="true" property="og:title" content="What&#x27;s new in Hyperspace - Hyperspace Docs"/><meta data-react-helmet="true" property="og:description" content="The fluffiest client for the fediverse"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Hyperspace developers"/><meta data-react-helmet="true" name="twitter:title" content="What&#x27;s new in Hyperspace - Hyperspace Docs"/><meta data-react-helmet="true" name="twitter:description" content="The fluffiest client for the fediverse"/><style type="text/css" id="server-side-jss">.jss16 {
+  background-color: #fff;
+}
+.jss17 {
+  border-radius: 4px;
+}
+.jss18 {
+  box-shadow: none;
+}
+.jss19 {
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+}
+.jss20 {
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+}
+.jss21 {
+  box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 3px 3px -2px rgba(0,0,0,0.12);
+}
+.jss22 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.jss23 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.jss24 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.jss25 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.jss26 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.jss27 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.jss28 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.jss29 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.jss30 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.jss31 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.jss32 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.jss33 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.jss34 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.jss35 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.jss36 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.jss37 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.jss38 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.jss39 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.jss40 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.jss41 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.jss42 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.jss7 {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.jss8 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: fixed;
+}
+.jss9 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: absolute;
+}
+.jss10 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: sticky;
+}
+.jss11 {
+  position: static;
+}
+.jss12 {
+  position: relative;
+}
+.jss13 {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5f5f5;
+}
+.jss14 {
+  color: #fff;
+  background-color: #673ab7;
+}
+.jss15 {
+  color: #fff;
+  background-color: #ff1744;
+}
+.jss61 {
+  color: inherit;
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+  outline: none;
+  position: relative;
+  user-select: none;
+  align-items: center;
+  border-radius: 0;
+  vertical-align: middle;
+  justify-content: center;
+  -moz-appearance: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.jss61::-moz-focus-inner {
+  border-style: none;
+}
+.jss61.jss62 {
+  cursor: default;
+  pointer-events: none;
+}
+.jss73 {
+  margin: 0;
+  display: block;
+}
+.jss74 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.14286em;
+  margin-left: -.04em;
+  letter-spacing: -.04em;
+}
+.jss75 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.30357em;
+  margin-left: -.02em;
+  letter-spacing: -.02em;
+}
+.jss76 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.13333em;
+  margin-left: -.02em;
+}
+.jss77 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.20588em;
+}
+.jss78 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.35417em;
+}
+.jss79 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.16667em;
+}
+.jss80 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.5em;
+}
+.jss81 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+}
+.jss82 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+}
+.jss83 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.75rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.66;
+}
+.jss84 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+.jss85 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 6rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 300;
+  line-height: 1;
+}
+.jss86 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 3.75rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 300;
+  line-height: 1;
+}
+.jss87 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 3rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.04;
+}
+.jss88 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 2.125rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.17;
+}
+.jss89 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.33;
+}
+.jss90 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.25rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.6;
+}
+.jss91 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.75;
+}
+.jss92 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.57;
+}
+.jss93 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.75rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 2.66;
+  text-transform: uppercase;
+}
+.jss94 {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+.jss95 {
+  text-align: left;
+}
+.jss96 {
+  text-align: center;
+}
+.jss97 {
+  text-align: right;
+}
+.jss98 {
+  text-align: justify;
+}
+.jss99 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.jss100 {
+  margin-bottom: 0.35em;
+}
+.jss101 {
+  margin-bottom: 16px;
+}
+.jss102 {
+  color: inherit;
+}
+.jss103 {
+  color: #673ab7;
+}
+.jss104 {
+  color: #ff1744;
+}
+.jss105 {
+  color: rgba(0, 0, 0, 0.87);
+}
+.jss106 {
+  color: rgba(0, 0, 0, 0.54);
+}
+.jss107 {
+  color: #f44336;
+}
+.jss108 {
+  display: inline;
+}
+.jss55 {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.jss55:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.jss55.jss59 {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .jss55:hover {
+    background-color: transparent;
+  }
+}
+.jss55:hover.jss59 {
+  background-color: transparent;
+}
+.jss56 {
+  color: inherit;
+}
+.jss57 {
+  color: #673ab7;
+}
+.jss57:hover {
+  background-color: rgba(103, 58, 183, 0.08);
+}
+@media (hover: none) {
+  .jss57:hover {
+    background-color: transparent;
+  }
+}
+.jss58 {
+  color: #ff1744;
+}
+.jss58:hover {
+  background-color: rgba(255, 23, 68, 0.08);
+}
+@media (hover: none) {
+  .jss58:hover {
+    background-color: transparent;
+  }
+}
+.jss60 {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.jss64 {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+.jss65 {
+  color: #673ab7;
+}
+.jss66 {
+  color: #ff1744;
+}
+.jss67 {
+  color: rgba(0, 0, 0, 0.54);
+}
+.jss68 {
+  color: #f44336;
+}
+.jss69 {
+  color: rgba(0, 0, 0, 0.26);
+}
+.jss70 {
+  font-size: inherit;
+}
+.jss71 {
+  font-size: 20px;
+}
+.jss72 {
+  font-size: 35px;
+}
+.jss43 {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.jss44 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .jss44 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.jss45 {
+  min-height: 56px;
+}
+@media (min-width:0px) and (orientation: landscape) {
+  .jss45 {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .jss45 {
+    min-height: 64px;
+  }
+}
+.jss46 {
+  min-height: 48px;
+}
+.jss47 {
+  z-index: 1500;
+  opacity: 0.9;
+  pointer-events: none;
+}
+.jss48 {
+  pointer-events: auto;
+}
+.jss49 {
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.625rem;
+  max-width: 300px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.4em;
+  border-radius: 4px;
+  background-color: #616161;
+}
+.jss50 {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  line-height: 1.14286em;
+}
+.jss51 {
+  margin: 0 24px ;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .jss51 {
+    margin: 0 14px;
+  }
+}
+.jss52 {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .jss52 {
+    margin: 0 14px;
+  }
+}
+.jss53 {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .jss53 {
+    margin: 14px 0;
+  }
+}
+.jss54 {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .jss54 {
+    margin: 14px 0;
+  }
+}
+.jss1 {
+  height: 100%;
+}
+.jss2 {
+  color: white;
+  padding-top: 100px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 100px;
+  background-color: #673ab7;
+}
+@media (min-width:600px) {
+  .jss2 {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+.jss3 {
+  font-size: 1.25rem;
+}
+.jss4 {
+  margin-left: -12px;
+  margin-right: 20px;
+}
+.jss5 {
+  font-weight: 500;
+}
+.jss6 {
+  font-size: 1rem;
+  padding-top: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 48px;
+  background-color: #fafafa;
+}
+@media (min-width:600px) {
+  .jss6 {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+.jss6 a {
+  color: #ff1744;
+  text-decoration: none;
+}
+.jss6 hr {
+  margin-top: 32px;
+  border-color: rgba(0, 0, 0, 0.12);
+  margin-bottom: 24px;
+}
+.jss6 img {
+  width: 500px;
+  max-width: 100%;
+  box-shadow: 0px 0px 4px #333;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.jss6 blockquote {
+  font-size: 1.10rem;
+  font-style: italic;
+  margin-left: 0;
+  padding-top: 4px;
+  border-color: #757575;
+  border-style: solid;
+  padding-left: 24px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  border-top-width: 0;
+  background-color: #fff;
+  border-left-width: 4px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+.jss6 code {
+  font-size: 1.2rem;
+}
+.jss6 table {
+  width: 100%;
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.jss6 table thead tr th {
+  text-align: left;
+  padding-top: 12px;
+  padding-left: 12px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  padding-bottom: 12px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
+}
+.jss6 table tbody tr td {
+  padding-top: 8px;
+  padding-left: 12px;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-style: solid;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
+}
+.jss6 table tbody tr:last-child td {
+  padding-top: 8px;
+  padding-left: 12px;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-style: solid;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+@media (min-width:960px) {
+  .jss6 img {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}</style><link rel="shortcut icon" href="/icons-31eb5d12bff9087dce60915f4d752ea4/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/icons-31eb5d12bff9087dce60915f4d752ea4/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons-31eb5d12bff9087dce60915f4d752ea4/favicon-32x32.png"/><link rel="manifest" href="/icons-31eb5d12bff9087dce60915f4d752ea4/manifest.json"/><meta name="mobile-web-app-capable" content="yes"/><meta name="theme-color" content="#fff"/><meta name="application-name" content="hyperspace-v1-site"/><link rel="apple-touch-icon" sizes="57x57" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-152x152.png"/><link rel="apple-touch-icon" sizes="167x167" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-167x167.png"/><link rel="apple-touch-icon" sizes="180x180" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-180x180.png"/><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-icon-1024x1024.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="apple-mobile-web-app-title" content="hyperspace-v1-site"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-320x460.png"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-640x920.png"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-640x1096.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-750x1294.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-1182x2208.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-1242x2148.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-748x1024.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-768x1004.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-1496x2048.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-31eb5d12bff9087dce60915f4d752ea4/apple-touch-startup-image-1536x2008.png"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d7ad8541cd16b4d2bad4569b5eeaebf4"/><style type="text/css" id="server-side-jss">html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}</style><link as="script" rel="preload" href="/component---src-templates-docpage-js-cefbc4a7a2ffb7211a4c.js"/><link as="script" rel="preload" href="/0-9a66e0b7caca73998281.js"/><link as="script" rel="preload" href="/app-ffd91931914ecf8355b5.js"/><link as="script" rel="preload" href="/styles-a63c3f2c8f2ca81ca12b.js"/><link as="script" rel="preload" href="/webpack-runtime-6a701a59a66e53c043af.js"/><link as="fetch" rel="preload" href="/static/d/754/path---docs-whats-new-04-a-214-ZhMSY5NMhtGCX0FNNHHf7ZPs.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="jss1"><header class="jss16 jss22 jss7 jss11 jss13"><div class="jss43 jss45 jss44"><a class="jss61 jss55 jss56 jss4" tabindex="0" role="button" title="Back to docs" href="/docs/"><span class="jss60"><svg class="jss64" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></svg></span></a><h6 class="jss73 jss90 jss102">Hyperspace Docs</h6></div></header><div class="jss2"><h1 class="jss73 jss86 jss102 jss5">What&#x27;s new in Hyperspace</h1><br/><p class="jss73 jss81 jss102 jss3">Read about the latest features, improvements, changes, and bug fixes to Hyperspace.</p></div><div class="jss73 jss81 jss101 jss6"><div><h1>0.7 (March 26, 2019)</h1>
+<p>This release continues to build on the <code>0.x</code> release with bug fixes, improvements, and new features.</p>
+<blockquote>
+<p>Note: This will be the last release from the 0.x branch of Hyperspace. Future versions of Hyperspace will be released and maintained on <a href="https://github.com/hyperspacedev/hyperspace">hyperspacedev/hyperspace</a>, which sports a brand new design and many more features to come.</p>
+</blockquote>
+<h2>New features</h2>
+<ul>
+<li>Get your vote on! The new polls feature from Mastodon has been added to Hyperspace. Create and vote on polls from any post.</li>
+<li>Express yourself with custom emojis! The emoji picker now brings in custom emojis from your server and posts will render custom emojis. 🙌</li>
+<li>Make posts faster with new Keyboard Shortcuts! Press 'N' on the home screen to open the composer. More keyboard shortcuts are found in the compose window.</li>
+</ul>
+<h2>Improvements</h2>
+<ul>
+<li>The carousel has been redesigned so that it remains a certain size, but images will still look nice.</li>
+<li>More loaders have been placed in. This should reduce ambiguity in many places.</li>
+<li>The composer has been completely overhauled with better image uploads (and new description support for screen readers and tooltips), emoji picker, visibility settings as a dropdown, warning system, and more.</li>
+<li>The reply window now displays the full HTML contents of a post and uses the same element from the composer.</li>
+<li>The composer at the top has been replaced with a compose button at the bottom of the window for quick access anywhere.</li>
+<li>Boost cards have a slight redesign that shows the full content and displays a regular tooltip.</li>
+<li>Images on posts have descriptions displayed on hover as a tooltip.</li>
+<li>Hyperspace's top bar is now visible at all times and is slimmer than before.</li>
+</ul>
+<h2>Developer changes</h2>
+<ul>
+<li>The <code>Composable</code> element has been introduced as a means of making new elements that create or reply to posts. This is the basis for the Composer and the reply window.</li>
+<li><strong>This marks the last release of the 0.x series. Further developments are on the main hyperspace repository.</strong></li>
+</ul>
+<h2>Bug fixes</h2>
+<ul>
+<li>Clicking the link to an image in the composer no longer makes the desktop app unusable.</li>
+<li>Grammarly has been disabled on the composer textarea to prevent collisions with Grammarly and the composer's state.</li>
+<li>The post date element now says via 'determination (unknown)' when the application isn't known.</li>
+</ul>
+<hr>
+<h1>0.6.1 (March 9, 2019)</h1>
+<p>This hotfix update fixes a bug that occurred after logging in and viewing the app, causing the page to go blank because it couldn't fetch account data.</p>
+<p>This update still contains the features and improvements found in version 0.6.0.</p>
+<hr>
+<h1>0.6 (March 9, 2019)</h1>
+<p>This release continues to build on the <code>0.x</code> release with bug fixes, improvements, and new features.</p>
+<h2>New features</h2>
+<ul>
+<li>Slideshows for posts are now available! For posts with more than one media item, a now carousel slideshow has been added to view each and every one of them at full-width.</li>
+<li>A new icon is here! Hyperspace is now represented with a fluffy mastodon with a purple robe.</li>
+</ul>
+<h2>Improvements</h2>
+<ul>
+<li>The login experience has been completely redesigned from the gound up. With a new slick UI, the process for logging into a Mastodon account couldn't get easier. Just enter the username and follow the prompts.</li>
+<li>The overall file size of applications should be lower now to due exclusion of developer dependencies.</li>
+<li>People can now press Ctrl/Cmd + Enter in a compose window or reply window to quickly post a status (requested by @BNolet, #19).</li>
+<li>The overall accuracy of thread panel-opening when clicking a post has been improved.</li>
+<li>A new media spinner is present when in the process of uploading images or videos for posts and changing profile images.</li>
+<li>The 'copy link' notification has been converted to an in-app toast notification to prevent app notification clutter.</li>
+<li>On devices with smaller resolutions, the profile container on the right is trimmed and re-presented at the top, providing quick access to their account page and log out/dark mode options.</li>
+<li>Timelines can now load older posts with a 'Load more' button at the bottom of the timeline. This also works on profile panels.</li>
+<li>Emojis in the emoji picker have been replaced with the Noto Color Emoji font.</li>
+</ul>
+<h2>Developer changes</h2>
+<ul>
+<li>Unit and build tests have been added to test components and the overall build process.</li>
+<li>CI tests have been enabled via Travis CI and make use of the new unit tests and build tests.</li>
+<li>A new <code>userAgent</code> utility is available to detect if a user is viewing Hyperspace on a mobile device.</li>
+<li>More files have been converted over to the TypeScript format.</li>
+<li>The dark mode toggle and lout out buttons are now respective elements.</li>
+<li>The app's content when logged in is now rendered as an <code>AppContent</code> element.</li>
+<li>Snap support has been added, allowing developers to build a snap package.</li>
+<li>jQuery files for Bootstrap have been replaced with Bootstrap.Native scripts, reducing overall Bootstrap errors.</li>
+<li>
+<p>There are now two Linux build commands for NPM:</p>
+<ul>
+<li><code>npm run build-electron-linux</code> will build all possible Linux targets (deb, AppImage, snap).</li>
+<li><code>npm run build-electron-linux-select</code> will build Linux targets in the classic style where an argument is required.</li>
+</ul>
+</li>
+</ul>
+<h2>Bug fixes</h2>
+<ul>
+<li>A bug that caused Hyperspace to crash due to the event's target returning a <code>Class</code> instead of an <code>HTMLElement</code> when clicking a button on a post has been fixed.</li>
+<li>A bug that caused the Windows icon to be significantly smaller has been (hopefully) fixed with the new Hyperspace icon.</li>
+<li>A bug that caused the Linux build command to fail due to an argument not being passed has been resolved.</li>
+</ul>
+<hr>
+<h1>0.5.5 (February 28, 2019)</h1>
+<p>Release <code>0.5.5</code> adds some minor improvements and bug fixes that have been backported from the initial Mac App Store version (note: the MAS version will reflect as <code>0.5.0</code>).</p>
+<ul>
+<li>Added a New Window menu shortcut</li>
+<li>App will not crash or throw an error if DevTools cannot be accessed</li>
+</ul>
+<hr>
+<h1>0.5 (February 24, 2019)</h1>
+<p>This release continues to build on the <code>0.x</code> release with bug fixes, improvements, and new features.</p>
+<h2>New features</h2>
+<ul>
+<li>Enjoy a brand new dark mode! Toggle dark mode in the toolbar to enjoy an experience that best works with your workflow, whether you take it light or stick to the dark side.</li>
+<li>Hyperspace expands to PWA and the Mac App Store*! Mobile users can experiment with the new progressive web app mode of Hyperspace, and macOS users can now get Hyperspace from the Mac App Store alongside their other apps.</li>
+</ul>
+<h2>Improvements</h2>
+<ul>
+<li>The login process has been improved. For mobile users and other users that may accidentally leave Hyperspace temporarily, Hyperspace will temporarily save some data to help you resume setting the app up later. In addition, a new 'About' section is available and a banner appears for mobile users that want to add Hyperspace as a progressive web app.</li>
+<li>macOS icons are now better rendered with pixel-fit icons for lower sizes that match the favicon.</li>
+<li>A context menu is now available in the desktop version to cut, copy, paste, and search text on DuckDuckGo (requested by @BNolet, #21).</li>
+<li>The Hyperspace icon on Windows should now appear larger to match the other icons on the system (@PoorPocketsMcNewHold, #32). The favicon in Safari has also been upscaled (@PoorPocketsMcNewHold, #33).</li>
+<li>The desktop app now has a minimum width to prevent elements from being displayed incorrectly at ridiculously tiny sizes.</li>
+<li>Posts can now be clicked or tapped on to open the thread besides using the 'Show thread' button (requested by @BNolet, #26).</li>
+<li>On posts written by the signed-in person, a new 'Delete' button is present to delete the post.</li>
+<li>Profile panels now display tables like the profile container below their bio.</li>
+<li>The signed-in person's profile panel now displays buttons to edit their bio (note) and to change avatar/header images.</li>
+<li>The "Couldn't get timeline" has been changed to better represent when a timeline is empty and maybe resulted from an error.</li>
+<li>The desktop app on macOS now uses a unique titlebar that matches more closely to other macOS apps with Electron.</li>
+<li>The main scrollbar has been hidden on some browsers to prevent shifting of content (Safari, Chrome, Edge?, desktop).</li>
+</ul>
+<h2>Developer changes</h2>
+<ul>
+<li>The codebase has been migrated over from JavaScript to TypeScript, making it easier to work with types in the Megalodon library.</li>
+<li>The package now comes with TypeScript dependencies, as well as <code>npm-run-all</code> to run some tasks simultaneously while testing Hyperspace.</li>
+<li>A new addition to the package manifest includes a command to build the macOS icon from the iconset in the <code>electron</code> folder.</li>
+<li>The package manifest has also been updated to point to entitlements and provisioning files for the Mac App Store version when building.</li>
+</ul>
+<h2>Bug fixes</h2>
+<ul>
+<li>Overlapped text on timeline tabs has been fixed by not rendering them on mobile devices and truncating the text down to 'Home', 'Local', 'Public', and 'Messages' (requested by @PoorPocketsMcNewHold, #30).</li>
+</ul>
+<hr>
+<h1>0.4 (February 15, 2019)</h1>
+<p>This release continues to build on the <code>0.x</code> release with bug fixes, improvements, and new features.</p>
+<h2>New features</h2>
+<ul>
+<li>Profile panels are now live! Quickly view information about a profile and view their latest statuses without leaving Hyperspace.</li>
+<li>Threads are now visible in Hyperspace! Just click "Show thread" to see the previous and next posts for a given status.</li>
+</ul>
+<h2>Improvements</h2>
+<ul>
+<li>Boost cards will now dynamically resize based on the type of content they have, whether it's long text or it contains media. With the new thread feature, they'll now also open their respective thread for further context.</li>
+<li>Replies can now be more detailed. The reply window now resides as a panel and offers more tools such as uploading media, setting content warnings, and changing the visibility.</li>
+<li>Links will now open in your respective web browser rather than trying to open in a new Electron window.</li>
+<li>Content warning buttons will now change colors depending on the type of content in question. Currently, this works best when 'NSFW: ' or 'Spoiler: ' prepends the spoiler text.</li>
+<li>Clicking a desktop notification will now return you to the app rather than doing nothing.</li>
+</ul>
+<h2>Bug fixes</h2>
+<ul>
+<li>A bug that causes building to fail on Linux because Wine wasn't installed has been resolved by specifying the type of build rather than building for all platforms.</li>
+<li>If someone follows you and you get notified, Hyperspace will no longer crash or freeze because there wasn't a status attached with it.</li>
+</ul>
+<hr>
+<h1>0.3 (February 6, 2019)</h1>
+<p>This release continues to build on the <code>0.x</code> release set with new features, improvements, and bug fixes:</p>
+<h2>New features</h2>
+<ul>
+<li>There's a new emoji picker in town! Click on it to add emoji to your post more easily. (Don't worry, you can still use your native emoji picker if you prefer that).</li>
+<li>Did you get the message? Conversations (beta) have landed in the timeline! View your recent direct messages and respond to them quickly.</li>
+</ul>
+<h2>Improvements</h2>
+<ul>
+<li>We've updated the stylesheet! We're embracing system defaults for emojis and fonts, as well as add a nice light shade of the theme accent color to better distinguish where postcards are.</li>
+<li>A log out button had been added to the navigation bar so that it's easier to log out of Hyperspace.</li>
+<li>The developer tools now will open in a new window by default so that it doesn't take up so much of your precious... hyper-<em>space</em>.</li>
+<li>We've moved the 'Add/change warning' button to the overflow menu so that the command bar wasn't so cluttered.</li>
+<li>Some icons have been updated to better represent what the action is.</li>
+<li>Replies should now match the same visibility settings as the post you're replying to. It only makes sense.</li>
+</ul>
+<h2>Bug fixes</h2>
+<ul>
+<li>Hyperspace wasn't really good with names, especially when they weren't Latin characters. We helped Hyperspace get over its fear of display names when it comes to creating initials for these cases, which should mean that it doesn't break down, cry, and crash on you.</li>
+</ul>
+<hr>
+<h1>0.2 (February 4, 2019)</h1>
+<p>This version of Hyperspace continues to build on the release of the <code>0.x</code> series with new improvements and bug fixes:</p>
+<h2>New features</h2>
+<ul>
+<li>Notifications have been introduced! You can find your latest notifications on the right-hand side under your profile card and, in theory, get push notifications for when a new notification comes in.</li>
+<li>Hyperspace now has an app menu, meaning that you can do things like insert emojis, cut/copy/paste, minimize and make the window full screen, and reload if necessary.</li>
+<li>Hyperspace now has an auto-updater! This works with Windows and macOS and is delivered via Electron's update service (<a href="https://update.electronjs.org">https://update.electronjs.org</a>).</li>
+</ul>
+<h2>General improvements</h2>
+<ul>
+<li>Icons on the compose window toolbar and the postcards now have a neat hover color.</li>
+<li>All links now use the theme's accent color instead of Bootstrap's default blue color.</li>
+</ul>
+<h2>Bug fixes</h2>
+<ul>
+<li>Noticed how Hyperspace would seem to freeze after you log in? We talked to the profile container manager and, well, he agreed to no longer hyperkill the app because it didn't register the account details the first time. He might've also agreed on letting Asriel hyperkill him if this happens again.</li>
+<li>Sometimes, finding the application name would cause Hyperspace to break down in fear. We fixed that up and now display that a Mastodon user tooted <code>with DETERMINATION</code> when we can't find the application name.</li>
+</ul>
+<hr>
+<h1>0.1 (February 3, 2019)</h1>
+<p>This is the first release. :)</p></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-docpage-js","jsonName":"docs-whats-new-04a","path":"/docs/whats-new"};window.dataPath="754/path---docs-whats-new-04-a-214-ZhMSY5NMhtGCX0FNNHHf7ZPs";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ffd91931914ecf8355b5.js"],"component---src-templates-docpage-js":["/component---src-templates-docpage-js-cefbc4a7a2ffb7211a4c.js"],"component---src-pages-404-js":["/component---src-pages-404-js-59af4152d3e0c768f132.js"],"component---src-pages-app-js":["/component---src-pages-app-js-bbae30abf0bcdbe00be8.js"],"component---src-pages-docs-js":["/component---src-pages-docs-js-20ae32b34964a2462566.js"],"component---src-pages-downloads-js":["/component---src-pages-downloads-js-1a3349536999749bc696.js"],"component---src-pages-index-js":["/component---src-pages-index-js-3c19a509860f63b63e8d.js"],"pages-manifest":["/pages-manifest-68a1fb7042b0867f64b3.js"]};/*]]>*/</script><script src="/webpack-runtime-6a701a59a66e53c043af.js" async=""></script><script src="/styles-a63c3f2c8f2ca81ca12b.js" async=""></script><script src="/app-ffd91931914ecf8355b5.js" async=""></script><script src="/0-9a66e0b7caca73998281.js" async=""></script><script src="/component---src-templates-docpage-js-cefbc4a7a2ffb7211a4c.js" async=""></script></body></html>
