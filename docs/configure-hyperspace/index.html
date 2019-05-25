@@ -670,7 +670,10 @@ body {
   body {
     background-color: #fff;
   }
-}</style><link as="script" rel="preload" href="/component---src-templates-docpage-js-7899f2bfb144d2ee50e9.js"/><link as="script" rel="preload" href="/0-9a66e0b7caca73998281.js"/><link as="script" rel="preload" href="/app-ffd91931914ecf8355b5.js"/><link as="script" rel="preload" href="/styles-a63c3f2c8f2ca81ca12b.js"/><link as="script" rel="preload" href="/webpack-runtime-3722f37283b3b7ec61b1.js"/><link as="fetch" rel="preload" href="/static/d/537/path---docs-configure-hyperspace-d-48-553-FFGSfSJl4G6jjJSybwHbjekQE.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="jss1"><header class="jss17 jss23 jss8 jss12 jss14"><div class="jss44 jss46 jss45"><a class="jss62 jss56 jss57 jss4" tabindex="0" role="button" title="Back to docs" href="/docs/"><span class="jss61"><svg class="jss65" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></svg></span></a><h6 class="jss74 jss91 jss103 jss5">Hyperspace Docs</h6></div></header><div class="jss2"><h1 class="jss74 jss87 jss103 jss6">Configure Hyperspace with config.json</h1><br/><p class="jss74 jss82 jss103 jss3">Learn how to use Hyperspace&#x27;s config.json to configure Hyperspace.</p></div><div class="jss74 jss82 jss102 jss7"><div><p>Newer versions of Hyperspace, starting from 1.0, come with a <code>config.json</code> file in the build folder to configure various parts of Hyperspace without digging into the source code. This config file includes branding, licenses, federation support, and a few other configurations.</p>
+}</style><link as="script" rel="preload" href="/component---src-templates-docpage-js-b92b0646edbcb950bce8.js"/><link as="script" rel="preload" href="/0-ea6e5136ff89b957f103.js"/><link as="script" rel="preload" href="/app-cf20bbbfcdb529e25d5f.js"/><link as="script" rel="preload" href="/styles-a63c3f2c8f2ca81ca12b.js"/><link as="script" rel="preload" href="/webpack-runtime-482bf40bc7defac9d077.js"/><link as="fetch" rel="preload" href="/static/d/111/path---docs-configure-hyperspace-d-48-553-4kkPJven6kjcg3vnhob2uIbYwz8.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="jss1"><header class="jss17 jss23 jss8 jss12 jss14"><div class="jss44 jss46 jss45"><a class="jss62 jss56 jss57 jss4" tabindex="0" role="button" title="Back to docs" href="/docs/"><span class="jss61"><svg class="jss65" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></svg></span></a><h6 class="jss74 jss91 jss103 jss5">Hyperspace Docs</h6><button class="jss62 jss56 jss57" tabindex="0" type="button"><span class="jss61"><svg class="jss65" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path fill="none" d="M0 0h24v24H0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"></path></svg></span></button></div></header><div class="jss2"><h1 class="jss74 jss87 jss103 jss6">Configure Hyperspace with config.json</h1><br/><p class="jss74 jss82 jss103 jss3">Learn how to use Hyperspace&#x27;s config.json to configure Hyperspace.</p></div><div class="jss74 jss82 jss102 jss7"><div><p>Newer versions of Hyperspace, starting from 1.0, come with a <code>config.json</code> file in the build folder to configure various parts of Hyperspace without digging into the source code. This config file includes branding, licenses, federation support, and a few other configurations.</p>
+<blockquote>
+<p><strong>Important</strong>: As of Hyperspace 1.0.0beta4, all Boolean keys are no longer wrapped as strings; your config file must have all Boolean values as they are.</p>
+</blockquote>
 <h2>Change Hyperspace's branding</h2>
 <p>The branding background, logo, and name is controlled under the <code>branding</code> key:</p>
 <div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"> <span class="token property">"branding"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
@@ -718,7 +721,7 @@ body {
 <tbody>
 <tr>
 <td><code>federated</code></td>
-<td>"true"</td>
+<td>n/a</td>
 <td>Whether the instance of Mastodon is federated or not. This is used to disable access to public fediverse features in Hyperspace for local instances.</td>
 </tr>
 <tr>
@@ -734,7 +737,7 @@ body {
 </tbody>
 </table>
 <blockquote>
-<p>Note: As of <a href="https://github.com/hyperspacedev/hyperspace/releases/tag/1.0.0beta3">Hyperspace 1.0.0beta3</a>+, the <code>federated</code> key also controls other settings, including the default visibility of new posts, and also restricts login to the instance listed in <code>defaultInstance</code>.</p>
+<p>Note: As of <a href="https://github.com/hyperspacedev/hyperspace/releases/tag/1.0.0beta4">Hyperspace 1.0.0beta4</a>+, the <code>federated</code> key now expands to more configuration settings.</p>
 </blockquote>
 <h3>Registration information</h3>
 <table>
@@ -775,8 +778,39 @@ body {
 </tr>
 </tbody>
 </table>
+<h3>Federation information</h3>
+<table>
+<thead>
+<tr>
+<th>Subkey</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>universalLogin</code></td>
+<td>true</td>
+<td>Whether anyone from any Mastodon instance can login to the app</td>
+</tr>
+<tr>
+<td><code>allowPublicPosts</code></td>
+<td>true</td>
+<td>Whether users can post publicly on the app</td>
+</tr>
+<tr>
+<td><code>enablePublicTimeline</code></td>
+<td>true</td>
+<td>Whether users can view the public timeline</td>
+</tr>
+</tbody>
+</table>
 <h3>Example</h3>
-<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token property">"federated"</span><span class="token operator">:</span> <span class="token string">"true"</span><span class="token punctuation">,</span>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token property">"federated"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"universalLogin"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"allowPublicPosts"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"enablePublicTimeline"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token property">"registration"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token property">"defaultInstance"</span><span class="token operator">:</span> <span class="token string">"mastodon.social"</span>
 <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -797,7 +831,7 @@ body {
 <tbody>
 <tr>
 <td><code>developer</code></td>
-<td>"false"</td>
+<td>false</td>
 <td>Whether the app should be run in developer mode or not. This helps distinguish between a stable release and a beta release for users.</td>
 </tr>
 <tr>
@@ -818,7 +852,7 @@ body {
 <tr>
 <td><code>location</code></td>
 <td>"dynamic"</td>
-<td><strong>Required:</strong> The URL that points to your Hyperspace installation, or 'dynamic' if it should be inferred from <code>window.location</code>.</td>
+<td><strong>Required:</strong> The URL that points to your Hyperspace installation, or 'dynamic' if it should be inferred from <code>window.location</code>. When building the desktop application, this is set to 'desktop'.</td>
 </tr>
 </tbody>
 </table>
@@ -846,24 +880,30 @@ body {
 </table>
 <h3>Example</h3>
 <div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
-    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0beta1"</span><span class="token punctuation">,</span>
-    <span class="token property">"developer"</span><span class="token operator">:</span> <span class="token string">"true"</span><span class="token punctuation">,</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0beta5"</span><span class="token punctuation">,</span>
+    <span class="token property">"developer"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     <span class="token property">"license"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
         <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Apache 2.0 License"</span><span class="token punctuation">,</span>
         <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://www.apache.org/licenses/LICENSE-2.0"</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token property">"repository"</span><span class="token operator">:</span> <span class="token string">"https://github.com/hyperspacedev/hyperspace"</span><span class="token punctuation">,</span>
+    <span class="token property">"location"</span><span class="token operator">:</span> <span class="token string">"dynamic"</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span></code></pre></div>
 <h2>An example of <code>config.json</code></h2>
 <div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
     <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0beta1"</span><span class="token punctuation">,</span>
+    <span class="token property">"location"</span><span class="token operator">:</span> <span class="token string">"dynamic"</span><span class="token punctuation">,</span>
     <span class="token property">"branding"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
         <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Hyperspace"</span><span class="token punctuation">,</span>
         <span class="token property">"logo"</span><span class="token operator">:</span> <span class="token string">"logo.svg"</span><span class="token punctuation">,</span>
         <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"background.png"</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token property">"developer"</span><span class="token operator">:</span> <span class="token string">"true"</span><span class="token punctuation">,</span>
-    <span class="token property">"federated"</span><span class="token operator">:</span> <span class="token string">"true"</span><span class="token punctuation">,</span>
+    <span class="token property">"developer"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"federated"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"universalLogin"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">"allowPublicPosts"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">"enablePublicTimeline"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token property">"registration"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
         <span class="token property">"defaultInstance"</span><span class="token operator">:</span> <span class="token string">"mastodon.social"</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -876,4 +916,4 @@ body {
         <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://www.apache.org/licenses/LICENSE-2.0"</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token property">"repository"</span><span class="token operator">:</span> <span class="token string">"https://github.com/hyperspacedev/hyperspace"</span>
-<span class="token punctuation">}</span></code></pre></div></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-docpage-js","jsonName":"docs-configure-hyperspace-d48","path":"/docs/configure-hyperspace"};window.dataPath="537/path---docs-configure-hyperspace-d-48-553-FFGSfSJl4G6jjJSybwHbjekQE";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ffd91931914ecf8355b5.js"],"component---src-templates-docpage-js":["/component---src-templates-docpage-js-7899f2bfb144d2ee50e9.js"],"component---src-pages-404-js":["/component---src-pages-404-js-59af4152d3e0c768f132.js"],"component---src-pages-app-js":["/component---src-pages-app-js-4088df6d66b9a396aa91.js"],"component---src-pages-docs-js":["/component---src-pages-docs-js-20ae32b34964a2462566.js"],"component---src-pages-downloads-js":["/component---src-pages-downloads-js-766024d3d9afab85d226.js"],"component---src-pages-index-js":["/component---src-pages-index-js-f4f1730cc55526f5e06b.js"],"pages-manifest":["/pages-manifest-f6cac380c50042ca8073.js"]};/*]]>*/</script><script src="/webpack-runtime-3722f37283b3b7ec61b1.js" async=""></script><script src="/styles-a63c3f2c8f2ca81ca12b.js" async=""></script><script src="/app-ffd91931914ecf8355b5.js" async=""></script><script src="/0-9a66e0b7caca73998281.js" async=""></script><script src="/component---src-templates-docpage-js-7899f2bfb144d2ee50e9.js" async=""></script></body></html>
+<span class="token punctuation">}</span></code></pre></div></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-docpage-js","jsonName":"docs-configure-hyperspace-d48","path":"/docs/configure-hyperspace"};window.dataPath="111/path---docs-configure-hyperspace-d-48-553-4kkPJven6kjcg3vnhob2uIbYwz8";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-cf20bbbfcdb529e25d5f.js"],"component---src-templates-docpage-js":["/component---src-templates-docpage-js-b92b0646edbcb950bce8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-6f63fd146fc37efbb061.js"],"component---src-pages-app-js":["/component---src-pages-app-js-4866e5b6b49862eba3a0.js"],"component---src-pages-docs-js":["/component---src-pages-docs-js-b930626238e104fdbe94.js"],"component---src-pages-downloads-js":["/component---src-pages-downloads-js-bf7a879f4023844c552d.js"],"component---src-pages-index-js":["/component---src-pages-index-js-c2c83688570a8e6a83c2.js"],"pages-manifest":["/pages-manifest-16eb54084f6bb467161b.js"]};/*]]>*/</script><script src="/webpack-runtime-482bf40bc7defac9d077.js" async=""></script><script src="/styles-a63c3f2c8f2ca81ca12b.js" async=""></script><script src="/app-cf20bbbfcdb529e25d5f.js" async=""></script><script src="/0-ea6e5136ff89b957f103.js" async=""></script><script src="/component---src-templates-docpage-js-b92b0646edbcb950bce8.js" async=""></script></body></html>
