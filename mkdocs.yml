@@ -1,0 +1,50 @@
+site_name: Hyperspace
+site_author: Hyperspace Developers
+site_description: 'The fluffiest client for the fediverse'
+docs_dir: mkdocs
+edit_uri: ""
+
+# Material Theme configuration
+theme:
+    favicon: images/favicon.ico
+    name: material
+    logo: 'images/favicon.png'
+    palette:
+        primary: 'deep-purple'
+        accent: 'red'
+    font:
+        text: 'Inter'
+        code: 'Fira Code'
+    feature:
+      tabs: true
+
+extra_css:
+  - 'https://rsms.me/inter/inter.css'
+  - 'https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css'
+
+extra_javascript:
+  - 'https://kit.fontawesome.com/f5938132ee.js'
+
+# Repository
+repo_name: 'Hyperspace'
+repo_url: 'https://github.com/hyperspacedev/hyperspace'
+
+copyright: '&copy; 2019 Hyperspace developers. <a href="https://thufie.lain.haus/NPL.html">Licensed under NPL v1</a>'
+
+extra:
+    social:
+    - type: 'comment-alt'
+      link: 'https://discord.gg/c69AXwk'
+    - type: 'envelope'
+      link: 'mailto:hyperspacedev@marquiskurt.net'
+    - type: 'blog'
+      link: 'https://mastodon.social/@hyperspacedev'
+    - type: 'donate'
+      link: 'https://patreon.com/hyperspacedev'
+
+markdown_extensions:
+- admonition
+- codehilite:
+    guess_lang: true
+- toc:
+    permalink: true

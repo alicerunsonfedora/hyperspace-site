@@ -1,0 +1,980 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="The fluffiest client for the fediverse">
+      
+      
+      
+        <meta name="author" content="Hyperspace Developers">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Beta Release Notes - Hyperspace</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#7e57c2">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,400i,700|Fira+Code&display=fallback">
+        <style>body,input{font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Code","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="deep-purple" data-md-color-accent="red">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#beta-release-notes" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Hyperspace" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/favicon.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Hyperspace
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Beta Release Notes
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/hyperspacedev/hyperspace" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Hyperspace
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="Changelog" class="md-tabs__link md-tabs__link--active">
+          Changelog
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../docs/" title="Docs" class="md-tabs__link">
+          Docs
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../downloads/" title="Downloads" class="md-tabs__link">
+          Downloads
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../press/" title="Press" class="md-tabs__link">
+          Press
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Hyperspace" class="md-nav__button md-logo">
+      
+        <img src="../../images/favicon.png" width="48" height="48">
+      
+    </a>
+    Hyperspace
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/hyperspacedev/hyperspace" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Hyperspace
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../about/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/" title="Contribution Guidelines" class="md-nav__link">
+      Contribution Guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Changelog
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Changelog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Stable Release Notes" class="md-nav__link">
+      Stable Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Beta Release Notes
+      </label>
+    
+    <a href="./" title="Beta Release Notes" class="md-nav__link md-nav__link--active">
+      Beta Release Notes
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#100beta6-september-16-2019" title="1.0.0beta6 (September 16, 2019)" class="md-nav__link">
+    1.0.0beta6 (September 16, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta5-may-24-2019" title="1.0.0beta5 (May 24, 2019)" class="md-nav__link">
+    1.0.0beta5 (May 24, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta4-may-17-2019" title="1.0.0beta4 (May 17, 2019)" class="md-nav__link">
+    1.0.0beta4 (May 17, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta3-may-3-2019" title="1.0.0beta3 (May 3, 2019)" class="md-nav__link">
+    1.0.0beta3 (May 3, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta2u2-april-26-2019" title="1.0.0beta2u2 (April 26, 2019)" class="md-nav__link">
+    1.0.0beta2u2 (April 26, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta2u1-april-24-2019" title="1.0.0beta2u1 (April 24, 2019)" class="md-nav__link">
+    1.0.0beta2u1 (April 24, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta2-april-22-2019" title="1.0.0beta2 (April 22, 2019)" class="md-nav__link">
+    1.0.0beta2 (April 22, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta1u1-april-21-2019" title="1.0.0beta1u1 (April 21, 2019)" class="md-nav__link">
+    1.0.0beta1u1 (April 21, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta1-april-12-2018" title="1.0.0beta1 (April 12?, 2018)" class="md-nav__link">
+    1.0.0beta1 (April 12?, 2018)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Docs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Docs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/add-to-home-screen/" title="Add Hyperspace to Mobile" class="md-nav__link">
+      Add Hyperspace to Mobile
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/configuring-hyperspace/" title="Configuring Hyperspace" class="md-nav__link">
+      Configuring Hyperspace
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/deploy-to-heroku/" title="Heroku Deployment" class="md-nav__link">
+      Heroku Deployment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Downloads
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Downloads
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../downloads/" title="Download Apps" class="md-nav__link">
+      Download Apps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../downloads/static-and-source/" title="Web Files and Source Code" class="md-nav__link">
+      Web Files and Source Code
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Press
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Press
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../press/" title="Press Overview" class="md-nav__link">
+      Press Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../press/2019/2019-09-29-post/" title="Welcome to the new site (9/29)" class="md-nav__link">
+      Welcome to the new site (9/29)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#100beta6-september-16-2019" title="1.0.0beta6 (September 16, 2019)" class="md-nav__link">
+    1.0.0beta6 (September 16, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta5-may-24-2019" title="1.0.0beta5 (May 24, 2019)" class="md-nav__link">
+    1.0.0beta5 (May 24, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta4-may-17-2019" title="1.0.0beta4 (May 17, 2019)" class="md-nav__link">
+    1.0.0beta4 (May 17, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta3-may-3-2019" title="1.0.0beta3 (May 3, 2019)" class="md-nav__link">
+    1.0.0beta3 (May 3, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta2u2-april-26-2019" title="1.0.0beta2u2 (April 26, 2019)" class="md-nav__link">
+    1.0.0beta2u2 (April 26, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta2u1-april-24-2019" title="1.0.0beta2u1 (April 24, 2019)" class="md-nav__link">
+    1.0.0beta2u1 (April 24, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta2-april-22-2019" title="1.0.0beta2 (April 22, 2019)" class="md-nav__link">
+    1.0.0beta2 (April 22, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta1u1-april-21-2019" title="1.0.0beta1u1 (April 21, 2019)" class="md-nav__link">
+    1.0.0beta1u1 (April 21, 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100beta1-april-12-2018" title="1.0.0beta1 (April 12?, 2018)" class="md-nav__link">
+    1.0.0beta1 (April 12?, 2018)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="beta-release-notes">Beta Release Notes<a class="headerlink" href="#beta-release-notes" title="Permanent link">&para;</a></h1>
+<h2 id="100beta6-september-16-2019">1.0.0beta6 (September 16, 2019)<a class="headerlink" href="#100beta6-september-16-2019" title="Permanent link">&para;</a></h2>
+<p>What's new:</p>
+<ul>
+<li>Adds new profile redesign (fixes #81)</li>
+<li>Fix theming issues on macOS Catalina (fixes #75)</li>
+<li>Adds Plemora support (fixes #70, fixes #69, and improves on #65)</li>
+<li>Runs macOS theme changes only when macOS (fixes #72)</li>
+<li>Adds support for notarizing the app</li>
+</ul>
+<h2 id="100beta5-may-24-2019">1.0.0beta5 (May 24, 2019)<a class="headerlink" href="#100beta5-may-24-2019" title="Permanent link">&para;</a></h2>
+<p>What's new:</p>
+<ul>
+<li>Source code introduces a new <a href="https://github.com/hyperspacedev/hyperspace/blob/master/patreon.md">Patreon contributors</a> list (#59)</li>
+<li>Fixes an issue with the search functionality on the desktop apps (fixes #60)</li>
+<li>Media cards should be shorter in description length and hide images when necessary (fixes #47)</li>
+</ul>
+<hr />
+<h2 id="100beta4-may-17-2019">1.0.0beta4 (May 17, 2019)<a class="headerlink" href="#100beta4-may-17-2019" title="Permanent link">&para;</a></h2>
+<p>What's new:</p>
+<ul>
+<li>Introduces new instance and app cards on the about page to better organize info (fixes #46)</li>
+<li>Instance card includes options to invite a new user, view terms of service, etc.</li>
+<li>Refines control on federation settings, including public timelines, universal login, and default visibilities (fixes #50)</li>
+<li>Introduces code to build the new desktop apps that support the following (#52):</li>
+<li>New login system supported by <code>hyperspace://</code> protocol</li>
+<li>Themes and dark mode fully supported in macOS (#55)</li>
+<li>Links that try to open in a new window (using <code>target="_blank"</code>) opens in default browser</li>
+<li>Includes build instructions for the desktop</li>
+<li>Includes Azure Pipelines code that tests building process</li>
+</ul>
+<hr />
+<h2 id="100beta3-may-3-2019">1.0.0beta3 (May 3, 2019)<a class="headerlink" href="#100beta3-may-3-2019" title="Permanent link">&para;</a></h2>
+<p>What's new:</p>
+<ul>
+<li>Login screen changes include a new version string and a fixed Authorize button (fixes #24).</li>
+<li>Changes login text from "If you are from X" to "Not from X?".</li>
+<li>Enforce stricter rules on when an instance is defederated in config.json (fixes #28):</li>
+<li>Default visibility changes from public to unlisted and cannot be changed to public in settings.</li>
+<li>Login page only allows to log in to instance from <code>registerBase</code>.</li>
+<li>Makes updates to CSS and themes:</li>
+<li>Fix narrow margins on mobile devices (fixes #27).</li>
+<li>Remove the Royal II (King) theme and replace with Classic theme.</li>
+<li>Update colors for Attract theme to prevent CSS collisions (fixes #26).</li>
+<li>Settings menu includes new icons for clarity and ease-of-discoverability (fix #30).</li>
+<li>Brand name is applied to more places in Hyperspace and changes Hyperspace app name in login process (fixes #34).</li>
+<li>Addresses issue where media upload snackbars didn't dismiss properly (fixes #32).</li>
+<li>Adds a Settings menu for editing profiles within Hyperspace and a new page at <code>/you</code> to edit a user's avatar, header, display name, and bio (fixes #14).</li>
+</ul>
+<hr />
+<h2 id="100beta2u2-april-26-2019">1.0.0beta2u2 (April 26, 2019)<a class="headerlink" href="#100beta2u2-april-26-2019" title="Permanent link">&para;</a></h2>
+<p>What's new:</p>
+<ul>
+<li>Changes the login function in the emergency mode from <code>createHyperspaceApp</code> to <code>Mastodon.registerApp</code> (pulled from <a href="https://github.com/gopherdonapp/app">@gopherdonapp/app</a>).</li>
+<li>Fixes the <code>createHyperspaceApp</code> function so that when it calls the <code>createApp</code> function, it passes the base URL from the parameters (required to make an app on the server with base URL) (fixes #8, noted by @GidiKroon).</li>
+<li>Fixes the bug where the app crashes when clicking "Load more posts" on a profile with no posts (fixes #13).</li>
+<li>Makes avatars in applicable areas clickable, redirecting to the profile page of an account.</li>
+<li>Adds a 'View profile' button as an action in a notification (fixes #15).</li>
+<li>Changes the default profile icon to <code>AssignmentIndIcon</code> for consistency.</li>
+<li>Adds streaming to notification page so new notifications are loaded in while on the page (fixes #19)</li>
+<li>Adds a reply button to notifications that are of the type mention (eg. messages, replies to existing posts, new posts with a mention, etc.)</li>
+<li>Fixes bug where boosting/unboosting a post doesn't update its state</li>
+<li>updates version to <code>1.0.0beta2u2</code></li>
+</ul>
+<hr />
+<h2 id="100beta2u1-april-24-2019">1.0.0beta2u1 (April 24, 2019)<a class="headerlink" href="#100beta2u1-april-24-2019" title="Permanent link">&para;</a></h2>
+<p>What's new:</p>
+<ul>
+<li>A backup method for authenticating has been implemented that works similar to the <code>hyperspace-classic</code> method.</li>
+<li>The view thread button now corresponds to the actual post if it's a reblog.</li>
+</ul>
+<hr />
+<blockquote>
+<p>Note: This document covers the latest features, bug fixes, and improvements deployed to the beta versions of Hyperspace, available at <a href="https://hyperspaceapp-net.herokuapp.com">https://hyperspacepapp-net.herokuapp.com</a> and other instances that are deployed on the beta channel.</p>
+</blockquote>
+<h2 id="100beta2-april-22-2019">1.0.0beta2 (April 22, 2019)<a class="headerlink" href="#100beta2-april-22-2019" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Update: this beta has been re-released due to an infinite state error that cause the 404 page to not work properly. The 404 page in question has been disabled for this release.</p>
+</blockquote>
+<p>What's new:</p>
+<ul>
+<li>A new <code>location</code> field in the config file should help mitigate redirect URL issues that cause client authentication errors. (#8)</li>
+<li>The notification badge will now be displayed on mobile devices in the menu and should no longer disappear and lose count with the setting "Notification badge counts all notifications'' turned on (fixes #7).</li>
+<li>The theme chooser has been slightly redesigned to include a new theme preview before applying the theme.</li>
+<li>A new setting is available to set the default visibility when composing new posts.</li>
+<li>The drawer menu on mobile devices has been reorganized in a logical manner.</li>
+<li>A new setting that allows the app to follow the browser's/platform's light mode/dark mode preference has been added.</li>
+<li>A few changes have been made to themes in general:</li>
+<li>The 'Brother' and 'Scientist' themes have been removed.</li>
+<li>Most existing themes have been renamed.</li>
+<li>Two new themes, Bliss and Attract, have been added.</li>
+<li>The 'Who to follow' page link has been enabled.</li>
+<li>A new recommendations page is available to follow suggested accounts and manage follow requests.</li>
+<li>~~A new '404' page has been added.~~</li>
+</ul>
+<hr />
+<h2 id="100beta1u1-april-21-2019">1.0.0beta1u1 (April 21, 2019)<a class="headerlink" href="#100beta1u1-april-21-2019" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The notifications toggle bug where it switches states after reloading because the user denied permission to display notifications has been fixed. (fixes #2)</li>
+<li>A new notification setting lets you display all notifications in the badge or just the new ones during that session (fixes #3).</li>
+<li>The app and website icons for Hyperspace have been reinstated (fixes #5).</li>
+<li>Padding for posts and content has been better optimized for smaller devices and the toolbar has been simplified so that it only shows 'Favorite', 'Boost', and 'Reply' on mobile. (fixes #4).</li>
+<li>This change also puts the 'View thread' and 'Open in Web' buttons in the menu when on a mobile device.</li>
+</ul>
+<hr />
+<h2 id="100beta1-april-12-2018">1.0.0beta1 (April 12?, 2018)<a class="headerlink" href="#100beta1-april-12-2018" title="Permanent link">&para;</a></h2>
+<ul>
+<li>First release of the <code>1.x</code> series of Hyperspace.</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../" title="Stable Release Notes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Stable Release Notes
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../docs/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Getting Started
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2019 Hyperspace developers. <a href="https://thufie.lain.haus/NPL.html">Licensed under NPL v1</a>
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://discord.gg/c69AXwk" class="md-footer-social__link fa fa-comment-alt"></a>
+    
+      <a href="mailto:hyperspacedev@marquiskurt.net" class="md-footer-social__link fa fa-envelope"></a>
+    
+      <a href="https://mastodon.social/@hyperspacedev" class="md-footer-social__link fa fa-blog"></a>
+    
+      <a href="https://patreon.com/hyperspacedev" class="md-footer-social__link fa fa-donate"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://kit.fontawesome.com/f5938132ee.js"></script>
+      
+    
+  </body>
+</html>
