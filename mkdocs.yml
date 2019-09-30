@@ -1,7 +1,7 @@
 site_name: Hyperspace
 site_author: Hyperspace Developers
 site_description: 'The fluffiest client for the fediverse'
-docs_dir: mkdocs
+docs_dir: src
 edit_uri: ""
 
 # Material Theme configuration
