@@ -16,7 +16,7 @@ Requires macOS 10.10 (Yosemite) or better and a 64-bit processor
 
 Requires Windows 7 or better
 
-**[Download EXE &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/1.0.0beta6/Hyperspace-1.0.0-beta6.exe)**
+**[Download EXE &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/1.0.0beta6/Hyperspace.Setup.1.0.0-beta6.exe)**
 
 ## Linux
 
