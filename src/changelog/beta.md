@@ -1,5 +1,20 @@
 # Beta Release Notes
 
+## 1.0.0beta7 (October 4, 2019)
+
+What's new:
+
+- Updated desktop menu bar with new menus and keyboard shortcuts (fixes #73)
+- Updates the designs for the edit profile page and Settings page, focusing on the signed-in user
+- Adds interface for managing blocked servers and disallows domains from a list at login (fixes #71)
+- Removes developer mode banner when not running under node or in desktop apps (fixes #80)
+- Changes license from Apache 2.0 to NPLv1
+- Biographies now include emojis
+- Updates desktop app dependencies
+- Displays a badge on app icon when new notifications arrive
+- Adds new "Aqua" theme for macOS to better blend in with macOS
+- Adds support for multiple accounts and user account switching (fixes #37)
+
 ## 1.0.0beta6 (September 16, 2019)
 
 What's new:
