@@ -1,5 +1,19 @@
 # Beta Release Notes
 
+## 1.0.0 Golden Master ( October 9, 2019)
+
+What's new:
+
+> **Golden Master**: This release is intended to reflect the upcoming stable release for the Hyperspace 1.x series and is merely a bug fix release. Developers, administrators, and users can expect this release to be almost identical to the upcoming stable release.
+
+- Removes 'Bliss' and 'Attract' themes
+- Mitigates horizontal scroll issues by hiding the profile picture on pages with the profile avatar design on smaller screens
+- Fixes verbiage of Settings descriptions
+- Removes unintended on page content spacing when the app bar is shrunken
+- Adds descriptions to Edit Profile page ("You")
+- Fixes issue where the search bar just refreshes the page without performing a search on desktop apps (fixes #100)
+- Makes minor adjustments to the desktop apps by only showing the window once the content is ready and opening the Developer tools within the window
+
 ## 1.0.0beta7 (October 4, 2019)
 
 What's new:

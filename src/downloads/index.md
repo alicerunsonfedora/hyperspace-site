@@ -10,13 +10,13 @@ Requires macOS 10.10 (Yosemite) or better and a 64-bit processor
 
 [![Download on the Mac App Store](../images/mas.svg)](https://itunes.apple.com/us/app/hyperspace/id1454139710?mt=12)
 
-**[Download DMG &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/1.0.0beta7/Hyperspace-1.0.0-beta7.dmg)**
+**[Download DMG &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/v1.0.0-gm/Hyperspace-1.0.0-gm.dmg)**
 
 ## Windows
 
 Requires Windows 7 or better
 
-**[Download EXE &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/1.0.0beta7/Hyperspace.Setup.1.0.0-beta7.exe)**
+**[Download EXE &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/v1.0.0-gm/Hyperspace.Setup.1.0.0-gm.exe)**
 
 ## Linux
 
@@ -24,6 +24,6 @@ Requires a 64-bit (x86 architecture) processor.
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/hyperspace)
 
-**[Download DEB &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/1.0.0beta7/hyperspace_1.0.0-beta7_amd64.deb)**
+**[Download DEB &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/v1.0.0-gm/hyperspace_1.0.0-gm_amd64.deb)**
 
-**[Download AppImage &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/1.0.0beta7/hyperspace-1.0.0-beta7.AppImage)**
+**[Download AppImage &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/v1.0.0-gm/hyperspace-1.0.0-gm.AppImage)**
