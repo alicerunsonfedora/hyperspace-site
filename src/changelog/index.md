@@ -1,5 +1,23 @@
 # Stable Release Notes
 
+## 1.0.0 (October 11, 2019)
+
+Hyperspace 1.0.0 is the next-generation release of Hyperspace. It contains many great improvements and features and is a recommended update for all users and developers.
+
+What's new:
+
+- Complete and responsive redesign using the Material design language that extends to desktops
+- New settings to change the color scheme, default visibility, and more
+- Support using multiple accounts within Hyperspace
+- Ability to manage blocked servers easily
+- Support for searching accounts, hashtags, and related posts
+- Viewing and managing follow requests and recommended follows
+- Brand-new composer with better attachments and poll support
+- Complete customization with a config file for administrators
+- Better notification support with ability to dismiss individual notifications and seeing a badge count (macOS/Linux only)
+- A brand-new menubar for desktop apps with keyboard shortcuts
+
+
 ## 0.7 (March 26, 2019)
 
 This release continues to build on the `0.x` release with bug fixes, improvements, and new features.
