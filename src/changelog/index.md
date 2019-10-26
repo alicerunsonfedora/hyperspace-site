@@ -1,5 +1,13 @@
 # Stable Release Notes
 
+## 1.0.1 (October 26, 2019)
+This update is recommended for all users and developers.
+
+What's new:
+
+- Fixes a bug where valid instances were marked as "invalid" (#105)
+
+
 ## 1.0.0 (October 11, 2019)
 
 Hyperspace 1.0.0 is the next-generation release of Hyperspace. It contains many great improvements and features and is a recommended update for all users and developers.
