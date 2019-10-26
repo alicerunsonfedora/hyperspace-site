@@ -8,10 +8,10 @@ This download is best suited for hosting on a web server.
 
 To learn more on how to deploy Hyperspace to a web server, read the [Getting Started documentation](../docs/index.md).
 
-**[Download Web files &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/v1.0.0/Hyperspace-1.0.0_static.zip)**
+**[Download Web files &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/v1.0.1/Hyperspace-1.0.1_static.zip)**
 
 ## Source code
 
-**[Download ZIP &rsaquo;](https://github.com/hyperspacedev/hyperspace/archive/v1.0.0.zip)**
+**[Download ZIP &rsaquo;](https://github.com/hyperspacedev/hyperspace/archive/v1.0.1.zip)**
 
-**[Download DMG &rsaquo;](https://github.com/hyperspacedev/hyperspace/archive/v1.0.0.tar.gz)**
+**[Download DMG &rsaquo;](https://github.com/hyperspacedev/hyperspace/archive/v1.0.1.tar.gz)**
