@@ -12,7 +12,7 @@ Requires macOS 10.13 (High Sierra) or better and a 64-bit processor
 
 Looking for the Mac App Store version? [Learn more here &rsaquo;](../press/2019/2019-10-26-post.md)
 
-**[Download DMG &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/v1.0.1/Hyperspace-1.0.0.dmg)**
+**[Download DMG &rsaquo;](https://github.com/hyperspacedev/hyperspace/releases/download/v1.0.1/Hyperspace-1.0.1.dmg)**
 
 ## Windows
 
