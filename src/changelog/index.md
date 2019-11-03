@@ -1,5 +1,16 @@
 # Stable Release Notes
 
+## 1.0.2 (November 3, 2019)
+This update is recommended for all developers and users of Hyperspace. We thank our Patrons for help making this release possible.
+
+**What's new:**
+
+- Fixes an issue where the context menu on reblogged posts had an outline in Chrome and the desktop apps (#108)
+- Fixes an issue where the release channels in the About page always were listed as "Release", despite the `developer` field in `config.json`
+- Updates the README to include new entitlements for macOS builds (#106)
+
+Special thanks to @travisk-codes for helping make this release possible.
+
 ## 1.0.1 (October 26, 2019)
 This update is recommended for all users and developers.
 
